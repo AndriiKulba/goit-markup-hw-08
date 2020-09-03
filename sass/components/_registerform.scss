@@ -1,0 +1,113 @@
+.register-form {
+  padding: 40px;
+
+  h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+
+    color: $secondary-color;
+  }
+}
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+
+  .form-input {
+    @extend %form-input;
+  }
+
+  .form-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+
+    @include trans-on-sec(transform, color);
+
+    cursor: pointer;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+
+    @include trans-on(fill);
+  }
+}
+
+.form-comment {
+  position: relative;
+  margin-bottom: 20px;
+
+  .form-cominp {
+    @extend %form-input;
+    padding-left: 19px;
+  }
+
+  .form-label {
+    position: absolute;
+    top: 12px;
+    left: 19px;
+
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+
+    color: $primary-text-color;
+
+    @include trans-on(transform);
+  }
+}
+
+.form-check {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-checklab {
+  padding-right: 11px;
+  padding-left: 36px;
+
+  a {
+    color: $weblog-btn-link;
+    text-decoration: underline;
+  }
+}
+
+.icon-check {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid $secondary-color;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+  @include trans-on-sec(background-color, border);
+
+  .form-checkinp:checked + & {
+    background-color: $weblog-btn-link;
+    border: none;
+  }
+}
+
+.btn-flex {
+  @extend %flex-center;
+}

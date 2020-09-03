@@ -1,0 +1,16 @@
+.hover-over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+  background: $hover-over-bgr;
+  font-size: 18px;
+  line-height: 1.5555;
+  color: $logo-bgr-color;
+  padding: 63px 24px;
+
+  transform: translatey(100%);
+
+  @include trans-on(transform);
+}

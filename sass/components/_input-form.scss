@@ -1,0 +1,41 @@
+%form-input {
+  width: 100%;
+
+  padding: 12px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  @include trans-on(fill);
+
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid $weblog-btn-link;
+    outline: none;
+
+    & + .form-label {
+      top: -4px;
+      left: 19px;
+      transform: translateY(-100%);
+      color: $weblog-btn-link;
+    }
+
+    & ~ .icon {
+      fill: $weblog-btn-link;
+    }
+  }
+  &:not(:placeholder-shown) {
+    & + .form-label {
+      top: -4px;
+      left: 19px;
+      transform: translateY(-100%);
+      color: $weblog-btn-link;
+    }
+
+    & ~ .icon {
+      fill: $weblog-btn-link;
+    }
+  }
+}

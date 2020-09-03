@@ -1,0 +1,15 @@
+.current {
+    color: $weblog-btn-link;
+    position: relative;
+    
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0px;
+    left: 0px;
+    background: $weblog-btn-link;
+    border-radius: 2px;
+  }
+}
