@@ -1,16 +1,16 @@
-.clnt-flexcont {
-  display: flex;
-}
+// .clnt-flexcont {
+//   display: flex;
+// }
 
 .clnt-flexcont .clnt-element {
   @extend %flex-center;
   justify-content: none;
-  width: calc((100%-150px) / 6);
+  width: calc((100%-30px) / 1);
   margin-right: 30px;
   
-  &:nth-child(6n) {
-    margin-right: 0px;
-    }
+  // &:nth-child(6n) {
+  //   margin-right: 0px;
+  //   }
   }
 
 

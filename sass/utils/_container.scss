@@ -1,9 +1,17 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+  
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: width 768px){
+    
+  }
+
+  @media screen and (min-width: width 1200){
+    width: 1200px;
+  }
 
   .advantage & {
     padding-top: 94px;

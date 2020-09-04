@@ -2,11 +2,11 @@
   background: $bgr-sectteam;
 
   .team-flexcont {
-    display: flex;
+  //   display: flex;
   
     .team-element {
-      width: calc((100%-90px) / 4);
-      margin-right: 30px;
+      width: calc((100%-30px) / 1);
+      // margin-right: 30px;
       background: $logo-bgr-color;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -38,8 +38,10 @@
 
 .soc-team {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
+  
+  // padding-left: 32px;
+  // padding-right: 32px;
   margin-bottom: 24px;
 }
 

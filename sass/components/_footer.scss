@@ -5,15 +5,16 @@
   }
   
   .footer-flex {
-    display: flex;
+    text-align: center;
+    // display: flex;
     
     .footflex-elem:not(:first-child) {
       margin-top: 12px;
     }
   
-    .footflex-elem:last-child {
-      margin-left: 94px;
-    }
+    // .footflex-elem:last-child {
+    //   margin-left: 94px;
+    // }
   
     .footflex-elem:first-child {
       margin-right: auto;
