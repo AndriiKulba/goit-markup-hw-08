@@ -1,27 +1,47 @@
 .foot-form {
-    // display: flex;
-   
-    .mail-btn {
-      width: 100%;
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
-      color: $footer-contact;
-      padding: 15px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
+
+  .mail-btn {
+    display: block;
+
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $footer-contact;
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    background-color: $bgr-footer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      justify-content: center;
       margin-right: 12px;
-  
-      background-color: $bgr-footer;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     }
   }
-  .footflex-elem .btn::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url(../images/iconsend.svg);
-    background-position: right -2px top;
-    background-repeat: no-repeat;
-  }
+}
+.footflex-elem .btn::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/iconsend.svg);
+  background-position: right -2px top;
+  background-repeat: no-repeat;
+}

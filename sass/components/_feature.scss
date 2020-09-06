@@ -1,37 +1,47 @@
 .advantage {
   .adv-flexcont {
-    text-align: center;
-    // display: flex;
+    @media screen and(min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
 }
-  
-  .adv-element {
-    display: inline-flex;
-    flex-direction: column;
-    width: calc((100%-30px) / 1);
-    // margin-right: 30px;
-  
-    &:nth-child(4n) {
-    margin-right: 0px;
+
+.adv-element {
+  // display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and(min-width: 768px) {
+    width: calc((100% - (2 * 30px)) / 2);
+    margin: 15px;
   }
-  
-    .link {
+
+  @media screen and(min-width: 1200px) {
+    width: calc((100% - (4 * 30px)) / 4);
+  }
+
+  .link {
     @extend %flex-center;
-  
-    width: 270px;
+
     height: 120px;
     background-color: $bgr-sectteam;
     border-radius: 4px;
+
+    @media screen and(min-width: 480px) {
+      width: 100%;
+    }
   }
-  
+
   .feature {
     margin-top: 30px;
     margin-bottom: 10px;
-    font-family: Roboto;
+
     font-weight: bold;
     font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.03em;
+    text-align: center;
     color: $secondary-color;
   }
 }

@@ -1,24 +1,35 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  
+
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: width 768px){
-    
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
-  @media screen and (min-width: width 1200){
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 
-  .advantage & {
-    padding-top: 94px;
+  .box-section & {
+    padding-bottom: 94px;
   }
 
-  .box-section &, .team-section &, .client-section & {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .advantage &,
+  .team-section &,
+  .client-section & {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 }
