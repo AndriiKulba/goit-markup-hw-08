@@ -48,21 +48,21 @@
   }
 }
 
-.contacts {
-  // display: flex;
-  // margin-left: auto;
+// .contacts {
+//   // display: flex;
+//   // margin-left: auto;
  
   
-  & .item {
-    // display: inline-flex;
-    // align-items: center;
+//   & .item {
+//     // display: inline-flex;
+//     // align-items: center;
   
   
-    // & + .item {
-    //   margin-left: 30px;
-    // }
-  }
-}
+//     // & + .item {
+//     //   margin-left: 30px;
+//     // }
+//   }
+// }
     
 .contacts-link {
   @extend .link-navi;
