@@ -2,7 +2,7 @@
   margin: 0;
   border: 0;
   text-decoration: none;
-  outline: 2px solid tomato;
+  // outline: 2px solid tomato;
 }
 
 html {
@@ -17,6 +17,8 @@ html {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .list {

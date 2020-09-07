@@ -13,6 +13,47 @@
       <div class="container main-navi">
         <a href="./" class="logo"><span class="web-logo">Web</span> Studio</a>
         <nav class="navi">
+          <button type="button" class="menu-button is-open" aria-expanded="true" aria-controls="menu-container" data-menu-button="">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu-burger" href="./images/symbol-defs.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <ul class="list menu-navi">
+              <li class="item">
+                <a href="./" class="link-navi current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link-navi">Портфолио </a>
+              </li>
+              <li class="item">
+                <a href="" class="link-navi">Контакты </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list contacts">
+            <li class="item">
+              <a href="mailto:info@example.com" class="contacts-link">
+                <svg class="mail-icon">
+                  <use
+                    href="./images/sprite.svg#icon-envelope-head"
+                    width="16px"
+                    height="11.2px"
+                  ></use>
+                </svg>
+                info@example.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380991111111" class="contacts-link"
+                ><svg class="phone-icon">
+                  <use href="./images/sprite.svg#icon-Vector-head"></use></svg>+38 099 111 11 11
+              </a>
+            </li>
+          </ul>
+          </div>
+          
           <ul class="list menu-navi">
             <li class="item">
               <a href="./" class="link-navi current">Студия</a>
@@ -41,9 +82,8 @@
           <li class="item">
             <a href="tel:+380991111111" class="contacts-link"
               ><svg class="phone-icon">
-                <use href="./images/sprite.svg#icon-Vector-head"></use></svg
-              >+38 099 111 11 11</a
-            >
+                <use href="./images/sprite.svg#icon-Vector-head"></use></svg>+38 099 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -176,16 +216,13 @@
                 </a>
                 <a href="" aria-label="ссылка Twitter" class="soc-link"
                   ><svg width="20px" height="20px">
-                    <use href="./images/sprite.svg#icon-twit"></use></svg
-                ></a>
+                    <use href="./images/sprite.svg#icon-twit"></use></svg></a>
                 <a href="" aria-label="ссылка Facebook" class="soc-link"
                   ><svg width="20px" height="20px">
-                    <use href="./images/sprite.svg#icon-face"></use></svg
-                ></a>
+                    <use href="./images/sprite.svg#icon-face"></use></svg></a>
                 <a href="" aria-label="ссылка Linkedin" class="soc-link"
                   ><svg width="20px" height="20px">
-                    <use href="./images/sprite.svg#icon-in"></use></svg
-                ></a>
+                    <use href="./images/sprite.svg#icon-in"></use></svg ></a>
               </p>
             </li>
             <li class="team-element">
@@ -318,7 +355,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="tablet">
+      
           <div class="footflex-elem">
             <a href="/">
               <p class="logo footer-logo">
@@ -365,7 +402,7 @@
               ></a>
             </p>
           </section>
-        </div>
+        
         <section class="footflex-elem">
           <h3 class="footer-registr">Подпишитесь на рассылку</h3>
           <form class="foot-form">

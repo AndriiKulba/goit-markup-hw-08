@@ -77,8 +77,19 @@
 }
 
 .form-checklab {
-  padding-right: 11px;
-  padding-left: 36px;
+  font-size: 12px;
+  line-height: 1.1667;
+  padding-right: 0px;
+  padding-left: 24px;
+  
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7143;
+    padding-right: 11px;
+    padding-left: 36px;}
+  
+ 
 
   a {
     color: $weblog-btn-link;
@@ -88,8 +99,8 @@
 
 .icon-check {
   position: absolute;
-  top: 50%;
-  left: 12px;
+  top: 25%;
+  left: 0px;
   transform: translateY(-50%);
 
   display: inline-flex;
@@ -101,6 +112,15 @@
   box-sizing: border-box;
 
   @include trans-on-sec(background-color, border);
+
+  @media screen and (min-width: 480px) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 12px;
+  }
 
   .form-checkinp:checked + & {
     background-color: $weblog-btn-link;

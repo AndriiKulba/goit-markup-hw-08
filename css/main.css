@@ -79,7 +79,6 @@ body {
   margin: 0;
   border: 0;
   text-decoration: none;
-  outline: 2px solid tomato;
 }
 
 html {
@@ -96,6 +95,8 @@ html {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .list {
@@ -320,10 +321,6 @@ img {
 .link-navi:hover, .contacts-link:hover, .link-navi:focus, .contacts-link:focus {
   color: #2196f3;
   fill: #2196f3;
-}
-
-.contacts .item + .item {
-  margin-left: 30px;
 }
 
 .contacts-link {
@@ -618,11 +615,26 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -636,37 +648,9 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footflex-elem:not(:first-child) {
-    margin-top: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .tablet {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 60px;
-    margin-top: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .tablet {
-    margin: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footflex-elem:last-child {
-    margin-left: auto;
-  }
-  .footflex-elem:first-child {
-    margin-right: 69px;
+    margin-top: 60px;
   }
 }
 
@@ -729,12 +713,6 @@ img {
 .footer-soc,
 .footer-registr {
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .foot-form {
-    margin-top: 60px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -810,8 +788,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1, 1);
           transform: translate(-50%, -50%) scale(1, 1);
-  min-width: 528px;
-  min-height: 581px;
+  width: calc((100% - (1 * 30px)) / 1);
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -820,6 +797,18 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop .modal {
+    width: 528px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -965,8 +954,19 @@ img {
 }
 
 .form-checklab {
-  padding-right: 11px;
-  padding-left: 36px;
+  font-size: 12px;
+  line-height: 1.1667;
+  padding-right: 0px;
+  padding-left: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-checklab {
+    font-size: 14px;
+    line-height: 1.7143;
+    padding-right: 11px;
+    padding-left: 36px;
+  }
 }
 
 .form-checklab a {
@@ -976,8 +976,8 @@ img {
 
 .icon-check {
   position: absolute;
-  top: 50%;
-  left: 12px;
+  top: 25%;
+  left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: -webkit-inline-box;
@@ -991,6 +991,20 @@ img {
           box-sizing: border-box;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .icon-check {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-check {
+    left: 12px;
+  }
 }
 
 .form-checkinp:checked + .icon-check {
@@ -1038,16 +1052,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .filters .item {
     margin-bottom: 0px;
   }
-}
-
-.filters .item + .item {
-  margin-left: 8px;
 }
 
 .filter {
