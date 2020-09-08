@@ -162,44 +162,41 @@
             <li class="box-element">
               <a href=""
                 >
-                <picture>
-                  <source 
-                  srcset="
-                  ./images/desktop.webp 1x, 
-                  ./images/desktop@2x.webp 2x" 
-                  type="image/webp">
-                    <img
-                    srcset="
-                    ./images/desktop.jpg 1x, 
-                    ./images/desktop@2x.jpg 2x" 
-                    src="./images/desktop.jpg"
-                    alt="десктоп"
-                    
-                  />  
+                <picture class="img">
+                  <source srcset="./images/desktop.webp 1x, ./images/desktop.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  
+                  <source srcset="./images/desktop.jpg 1x, ./images/desktop.jpg 2x" media="(min-width: 1200px)">
+                  
+                  <img src="./images/desktop.jpg" alt="десктоп">
                 </picture>
-                
+                                
                 <p class="box">Десктопные приложения</p>
               </a>
             </li>
             <li class="box-element">
               <a href=""
-                ><img
-                  src="./images/mobile.jpg"
-                  alt="мобильний"
-                  width="370"
-                  height="294"
-                />
+                >
+                <picture class="img">
+                  <source srcset="./images/mobile.webp 1x, ./images/mobile.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/mobile.jpg 1x, ./images/mobile.jpg 2x" media="(min-width: 1200px)">
+                  
+                  <img src="./images/mobile.jpg" alt="мобильний">
+                </picture>
+                
                 <p class="box">Мобильные приложения</p>
               </a>
             </li>
             <li class="box-element">
               <a href=""
-                ><img
-                  src="./images/desin.jpg"
-                  alt="дизайн"
-                  width="370"
-                  height="294"
-                />
+                >
+                <picture class="img">
+                  <source srcset="./images/desin.webp 1x, ./images/desin.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                
+                  <source srcset="./images/desin.jpg 1x, ./images/desin.jpg 2x" media="(min-width: 1200px)">
+                
+                  <img src="./images/desin.jpg" alt="дизайн">
+                </picture>
+                
                 <p class="box">Дизайнерские решения</p>
               </a>
             </li>
@@ -211,20 +208,18 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team-flexcont">
             <li class="team-element">
-              <picture>
-                <source 
-                  srcset="
-                  ./images/comand1.webp 1x, 
-                  ./images/comand1@2x.webp 2x" 
-                  type="image/webp">
-                <img
-                  srcset="
-                  ./images/comand1.jpg 1x, 
-                  ./images/comand1@2x.jpg 2x" 
-                  src="./images/comand1.jpg"
-                alt="Николай Кучеренко"
-                  
-                />  
+              <picture class="img">
+                <source srcset="./images/comand1.webp 1x, ./images/comand1.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/m-t/comand1-tablet/img.webp 1x, ./images/m-t/comand1-tablet/img@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/m-t/comand1-mobile/img.webp 1x, ./images/m-t/comand1-mobile/img@2x.webp 2x"
+                  media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/comand1.jpg 1x, ./images/comand1.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/m-t/comand1-tablet/img.jpg 1x, ./images/m-t/comand1-tablet/img@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./images/m-t/comand1-mobile/img.jpg 1x, ./images/m-t/comand1-mobile/img@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                <img src="./images/comand1.jpg" alt="Николай Кучеренко">
               </picture>
               
               <h3 class="team-name">Николай Кучеренко</h3>
@@ -247,22 +242,20 @@
               </p>
             </li>
             <li class="team-element">
-              <picture>
-                <source 
-                  srcset="
-                  ./images/comand2.webp 1x, 
-                  ./images/comand2@2x.webp 2x" 
-                  type="image/webp">
-                <img
-                  srcset="
-                  ./images/comand2.jpg 1x, 
-                  ./images/comand2@2x.jpg 2x" 
-                  src="./images/comand2.jpg"
-                alt="Ольга Иванова"
-                  
-                />  
+              <picture class="img">
+                <source srcset="./images/comand2.webp 1x, ./images/comand2.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/m-t/comand2-tablet/img.webp 1x, ./images/m-t/comand2-tablet/img@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/m-t/comand2-mobile/img.webp 1x, ./images/m-t/comand2-mobile/img@2x.webp 2x"
+                  media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/comand2.jpg 1x, ./images/comand2.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/m-t/comand2-tablet/img.jpg 1x, ./images/m-t/comand2-tablet/img@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./images/m-t/comand2-mobile/img.jpg 1x, ./images/m-t/comand2-mobile/img@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                <img src="./images/comand2.jpg" alt="Ольга Иванова">
               </picture>
-              
+                            
               <h3 class="team-name">Ольга Иванова</h3>
               <p class="team-prof">Frontend Developer</p>
               <p class="soc-team">
@@ -286,29 +279,17 @@
               </p>
             </li>
             <li class="team-element">
-              <!-- <picture class="img">
-                <source srcset="./img/teamcard1/team1-1200.webp 1x, ./img/teamcard1/team1-1200-2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                <source srcset="./img/teamcard1/team1-768.webp 1x, ./img/teamcard1/team1-768-2x.webp 2x" media="(min-width: 768px)" type="image/webp">
-                <source srcset="./img/teamcard1/team1-480.webp 1x, ./img/teamcard1/team1-480-2x.webp 2x" type="image/webp">
-                <source srcset="./img/teamcard1/team1-1200.jpg 1x, ./img/teamcard1/team1-1200-2x.jpg 2x" media="(min-width: 1200px)">
-                <source srcset="./img/teamcard1/team1-768.jpg 1x, ./img/teamcard1/team1-768-2x.jpg 2x" media="(min-width: 768px)">
-                <source srcset="./img/teamcard1/team1-480.jpg 1x, ./img/teamcard1/team1-480">
-                <img src="./img/teamcard1/teamcard1-1200.jpg" alt="Андрей Шевченко">
-              </picture>-->
-              <picture> 
-                <source 
-                  srcset="
-                  ./images/comand3.webp 1x, 
-                  ./images/comand3@2x.webp 2x" 
-                  type="image/webp">
-                <img
-                  srcset="./images/comand3.jpg 1x, ./images/comand3@2x.jpg 2x" 
-                  src="./images/comand3.jpg"
-                alt="Андрей Шевченко"
-                  
-                />  
+              <picture class="img">
+                <source srcset="./images/comand3.webp 1x, ./images/comand3.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/m-t/comand3-tablet/img.webp 1x, ./images/m-t/comand3-tablet/img@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/m-t/comand3-mobile/img.webp 1x, ./images/m-t/comand3-mobile/img@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/comand3.jpg 1x, ./images/comand3.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/m-t/comand3-tablet/img.jpg 1x, ./images/m-t/comand3-tablet/img@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/m-t/comand3-mobile/img.jpg 1x, ./images/m-t/comand3-mobile/img@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/comand3.jpg"
+                alt="Андрей Шевченко">
               </picture>
-              
+                            
               <h3 class="team-name">Андрей Шевченко</h3>
               <p class="team-prof">Marketing</p>
               <p class="soc-team">
@@ -332,20 +313,18 @@
               </p>
             </li>
             <li class="team-element">
-              <picture></picture>
-              <!-- <source 
-                  srcset="
-                  ./images/comand4.webp 1x, 
-                  ./images/comand4@2x.webp 2x" 
-                  type="image/webp"> -->
-                <img
-                  srcset="
-                  ./images/comand4.jpg 1x, 
-                  ./images/comand4@2x.jpg 2x" 
-                  src="./images/comand4.jpg"
-                alt="Иван Николаев"
-                  
-                />  
+              <picture class="img">
+                <source srcset="./images/comand4.webp 1x, ./images/comand4.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/m-t/comand4-tablet/img.webp 1x, ./images/m-t/comand4-tablet/img@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/m-t/comand4-mobile/img.webp 1x, ./images/m-t/comand4-mobile/img@2x.webp 2x"
+                  media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/comand4.jpg 1x, ./images/comand4.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/m-t/comand4-tablet/img.jpg 1x, ./images/m-t/comand4-tablet/img@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./images/m-t/comand4-mobile/img.jpg 1x, ./images/m-t/comand4-mobile/img@2x.jpg 2x"
+                  media="(max-width: 767px)">
+                <img src="./images/comand4.jpg" alt="Иван Николаев">
               </picture>
               
               <h3 class="team-name">Иван Николаев</h3>
