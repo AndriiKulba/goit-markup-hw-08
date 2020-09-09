@@ -1,5 +1,5 @@
 @import "../sass/utils/variables";
-// @import "../sass/base/normalize";
+@import "../sass/base/normalize";
 @import "../sass/utils/font";
 @import "../sass/utils/mixin";
 @import "../sass/utils/general";
@@ -8,6 +8,7 @@
 @import "../sass/utils/placeholder";
 @import "../sass/components/button";
 @import "../sass/components/logo";
+@import "../sass/components/mobile-menu";
 @import "../sass/utils/soc-link";
 @import "../sass/components/topline";
 @import "../sass/utils/current";

@@ -1,6 +1,12 @@
 .current {
     color: $weblog-btn-link;
     position: relative;
+    padding-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
     
   &::before {
     content: "";
