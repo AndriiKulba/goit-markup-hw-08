@@ -2,18 +2,29 @@
   background: $bgr-sectteam;
 
   .team-flexcont {
+    
+    
     @media screen and(min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
+      
     }
 
     .team-element {
       width: 100%;
-      // margin-right: 30px;
+      padding-bottom: 24px;
+      
       background: $logo-bgr-color;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+      &:not(:last-child){
+        @media screen and(max-width: 767px) {
+          
+          margin-bottom: 30px;
+        }
+      }  
 
       @media screen and(min-width: 768px) {
         width: calc((100% - (2 * 30px)) / 2);
@@ -52,5 +63,5 @@
   display: flex;
   justify-content: center;
 
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
 }
